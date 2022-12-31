@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="config.css">
+  <link rel="stylesheet" href="styles.css">
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+
+  <title>Frontend Mentor | Product preview card component</title>
+  <script src="./home-scripts.js" defer type="module"></script>
+</head>
+
+<body>
+  <main class="main">
+    <section class="container">
+      <div class="container-img">
+        <picture>
+          <source srcset="./assets/images/image-product-desktop.jpg" media="(min-width: 820px)">
+          <img src="./assets/images/image-product-mobile.jpg" alt="parfum gabrielle">
+        </picture>
+      </div>
+      <div class="container-info" id="container-info">
+        <div class="container-title" id="container-title">
+          <p class="sub-title">perfume</p>
+          <h1 class="title" id="title"></h1>
+        </div>
+        <div class="description" id="description"></div>
+        <div class="price">
+          <div class="current-value" id="current-value"></div>
+          <span class="previous-value" id="previous-value"></span>
+        </div>
+        <button type="button" class="cart-button">
+          <span>
+            <img src="./assets/images/icon-cart.svg" alt="icone-carrinho">
+            <p>Add to Cart</p>
+          </span>
+        </button>
+      </div>
+    </section>
+  </main>
+</body>
+
+</html>

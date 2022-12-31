@@ -1,0 +1,143 @@
+.main {
+  width: 100%;
+  height: 100%;
+  background: var(--cream);
+  display: grid;
+  place-items: center;
+}
+
+.container {
+  background: var(--white);
+  display: flex;
+  max-height: 40.8rem;
+  max-width: 40.8rem;
+  border-radius: 12px;
+  overflow: hidden;
+}
+
+.container-info {
+  flex-basis: 50%;
+  padding: 2rem;
+  width: 100%;
+  min-height: 100%;
+  display: grid;
+}
+
+.container-img {
+  flex-basis: 50%;
+  display: grid;
+  place-items: center;
+  width: 100%;
+  height: 100%;
+
+}
+
+.container-img img {
+  max-width: 100%;
+  object-fit: contain;
+
+}
+
+.cart-button {
+  border: none;
+  background: var(--dark-cyan);
+  min-height: 3.5rem;
+  align-self: end;
+  border-radius: 8px;
+  transition: all 0.3s;
+  cursor: pointer;
+}
+  
+.cart-button:hover {
+  background: var(--very-dark-cyan);
+
+}
+
+.cart-button span {
+  display: flex;
+  justify-content: center;
+  font-family: 'Montserrat', sans-serif;
+  font-weight: bold;
+  color: var(--white);
+  gap: 0 10px;
+
+}
+
+.container-title {
+  display: grid;
+  margin-bottom: 1rem;
+}
+
+.sub-title {
+  text-transform: uppercase;
+  letter-spacing: 5px;
+  font-family: 'Montserrat', sans-serif;
+  color: var(--dark-grayish-blue);
+}
+
+.title {
+  font-size: 2.5rem;
+  line-height: 0.9;
+}
+
+.description {
+  font-family: 'Montserrat', sans-serif;
+  color: var(--dark-grayish-blue);
+  line-height: 1.6;
+}
+
+.price {
+  display: flex;
+  align-items: center;
+  gap: 0 1.2rem;
+
+}
+
+.current-value {
+  font-size: 2.5rem;
+  font-weight: bold;
+  color: var(--dark-cyan);
+
+}
+
+.previous-value {
+  font-size: 0.9rem;
+  font-family: 'Montserrat', sans-serif;
+  color: var(--dark-grayish-blue);
+  position: relative;
+  text-decoration: line-through;
+}
+
+@media screen and (max-width: 820px) {
+
+  .container {
+    flex-direction: column;
+    max-height: 90vh;
+    max-width: 90vw;
+  }
+
+
+  .container-info {
+    flex-basis: 40%;
+    row-gap: 1.5rem;
+  }
+
+  .container-img {
+    flex-basis: auto;
+
+  }
+
+  .container-title {
+    row-gap: 1rem;
+    margin-bottom: 0;
+  }
+
+}
+
+@media screen and (max-width: 375px) {
+  html {
+    font-size: 13px
+  }
+
+
+}
